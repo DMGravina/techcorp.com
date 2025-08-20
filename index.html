@@ -55,12 +55,11 @@
 
     /* Hero Section */
     .hero {
-      background: #1a1a2e; /* cor sólida em vez de imagem */
+      background: #1a1a2e;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
       color: white;
       position: relative;
       padding: 20px;
@@ -70,6 +69,13 @@
       position: relative;
       z-index: 1;
       max-width: 600px;
+      text-align: left; /* deixa alinhado à esquerda */
+      background: rgba(255, 255, 255, 0.05); /* fundo translúcido */
+      border: 2px solid #00aaff; /* borda azul */
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      margin-left: 80px; /* desloca para direita */
     }
 
     .hero h1 {
@@ -117,7 +123,6 @@
       <h1>Bem-Vindo à TechCorp!</h1>
       <p>Soluções de TI com comprometimento, responsabilidade e segurança.</p>
       <p>Entre em contato para obter suporte ou compartilhar seu projeto.</p>
-      <!-- Botão que gera erro 404 -->
       <a href="login-cliente.html" class="btn">Fale com um Profissional</a>
     </div>
   </div>
